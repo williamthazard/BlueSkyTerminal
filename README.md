@@ -1,6 +1,6 @@
 # Bluesky Terminal Poster
 
-A simple terminal-based Python application that allows users to post text and images directly to Bluesky.
+A simple terminal-based Python application that allows users to post text and images directly to Bluesky. If yo9u want to read more about is, [this blog post](https://www.m365princess.com/blogs/bluesky-terminal-poster/) is for you.
 
 ## Requirements
 

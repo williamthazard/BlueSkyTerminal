@@ -1,6 +1,6 @@
 # Bluesky Terminal Poster
 
-A simple terminal-based Python application that allows users to post text and images directly to Bluesky. If yo9u want to read more about is, [this blog post](https://www.m365princess.com/blogs/bluesky-terminal-poster/) is for you.
+A simple terminal-based Python application that allows users to post text, images, @mentions, and alt text directly to Bluesky. If you want to read more about is, [this blog post](https://www.m365princess.com/blogs/bluesky-terminal-poster/) is for you.
 
 ## Requirements
 
@@ -18,8 +18,10 @@ This application requires the following Python library, which can be installed u
 
 ## Features
 
-- Post messages directly from the terminal to your Bluesky feed.
-- Optionally attach images to your posts, supporting common image formats (JPEG, PNG, etc.) with a maximum size of 1 MB.
+- Post messages directly from the terminal to your Bluesky feed
+@Mentions: Tag other Bluesky users directly in your posts by typing @username
+- Image Attachments: Optionally attach images to your posts in formats such as JPEG or PNG (maximum 1 MB)
+- Alt Text for Images: Provide alt text descriptions for images to improve accessibility
 
 ## Setup
 
@@ -44,11 +46,12 @@ python bluesky_post_image.py
 ```
 
 * When prompted, enter the content you wish to post
-* If you wish to include an image, provide the path to the image file when prompted. The image must:
-    * Be in a supported format (.jpeg, .png, etc.).
-    * Be less than 1 MB in size.
-
-Upon successful posting, a confirmation message will be displayed, including the response from the Bluesky API.
+* @Mentions: You can mention other users by typing @username in your post content. The application will automatically resolve the @mention to the appropriate Bluesky identifier
+* Image Attachments: If you wish to include an image, provide the path to the image file when prompted. The image must:
+  * Be in a supported format (.jpeg, .png, etc.)
+  * Be less than 1 MB in size
+* Alt Text: If an image is attached, you’ll be prompted to enter an alt text description for accessibility
+* Upon successful posting, a confirmation message will be displayed, including the response from the Bluesky API
 
 ## License
 

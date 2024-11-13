@@ -42,7 +42,7 @@ Ensure you have the following information:
 4. Run the Application
 
 ```
-python bluesky_post_image.py
+python bluesky_post_alt.py
 ```
 
 * When prompted, enter the content you wish to post

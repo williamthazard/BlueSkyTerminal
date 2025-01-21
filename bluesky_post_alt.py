@@ -6,8 +6,8 @@ import re
 import mimetypes
 
 # Your Bluesky credentials and API URLs
-handle = '<your handle>.bsky.social'
-app_password = 'your app password'
+handle = os.environ.get('BS_UN')
+app_password = os.environ.get('BS_PW')
 pds_url = 'https://bsky.social'
 session_endpoint = f'{pds_url}/xrpc/com.atproto.server.createSession'
 post_endpoint = f'{pds_url}/xrpc/com.atproto.repo.createRecord'

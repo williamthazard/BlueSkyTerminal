@@ -5,8 +5,8 @@ import os
 import mimetypes  
 
 # Replace with your Bluesky handle and app password
-handle = 'your_name.bsky.social'
-app_password = 'your app password'
+handle = os.environ.get('BS_UN')
+app_password = os.environ.get('BS_PW')
 
 # Bluesky API endpoints
 pds_url = 'https://bsky.social'
